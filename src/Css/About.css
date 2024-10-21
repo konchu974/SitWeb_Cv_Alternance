@@ -1,0 +1,14 @@
+
+  .frameAbout {
+    width: 95%;
+    height: 95%;
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+
+  }
