@@ -3,10 +3,15 @@ import "../Css/About.css"
 
 function About() {
   return (
-    <div className="container">
-    <div className="frameAbout">
-    </div>
-  </div>
+    <><div className="hard-skills">
+      <div className="header">
+        <div className="arrow-left" />
+        Hard Skills
+        <div className="arrow-right" />
+      </div>
+    </div><div className="content">
+        hello
+      </div></>
   );
 }
 

@@ -4,28 +4,4 @@ body {
   padding: 0;
 }
 
-nav {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-section {
-  padding: 20px;
-}
-
-h1, h2 {
-  color: #333;
-}
 

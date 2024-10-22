@@ -1,0 +1,78 @@
+nav {
+    background-color: transparent; /* Rendre le fond de la barre de navigation transparent */
+    position: relative; /* Assure que la barre de navigation est au-dessus des autres éléments */
+    z-index: 1; /* Permet à la barre de navigation de rester au-dessus */
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between; /* Espace entre le logo et la nav */
+    align-items: center; /* Aligne verticalement les éléments */
+    padding: 0 20px; /* Espacement latéral */
+}
+
+#nav-mobile {
+    display: flex; /* Utiliser flexbox pour la liste */
+    list-style-type: none; /* Supprimer les puces */
+    margin: 0; /* Supprimer les marges par défaut */
+    padding: 0; /* Supprimer le remplissage par défaut */
+}
+
+#nav-mobile li {
+    margin-left: 20px; /* Espacement entre les éléments */
+}
+
+#nav-mobile a {
+    display: block; /* Permet de donner une taille uniforme */
+    padding: 15px 20px; /* Taille uniforme pour tous les éléments */
+    text-decoration: none; /* Supprimer le soulignement */
+    color: #000000; /* Couleur du texte (blanc pour visibilité) */
+    text-align: center; /* Centrer le texte */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+#nav-mobile a:hover {
+    background-color: rgba(213, 71, 71, 0.2); /* Changer la couleur de fond au survol avec transparence */
+}
+
+/* Style spécifique pour le dropdown */
+.dropdown {
+    position: relative; /* Nécessaire pour le dropdown */
+}
+
+.dropdown-toggle {
+    display: block; /* Rendre le dropdown comme un élément block pour l'uniformité */
+    padding: 15px 20px; /* Même padding que les autres éléments */
+    text-decoration: none; /* Supprimer le soulignement */
+    color: #000000; /* Couleur du texte (blanc pour visibilité) */
+    text-align: center; /* Centrer le texte */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur main au survol */
+}
+
+.dropdown-toggle:hover {
+    background-color: rgba(213, 71, 71, 0.2); /* Changer la couleur de fond au survol avec transparence */
+}
+
+.dropdown-options {
+    display: none; /* Cacher le dropdown par défaut */
+    position: absolute; /* Positionner le dropdown */
+    top: 100%; /* Positionner juste en dessous */
+    left: 0; /* Alignement à gauche */
+    background-color: #fff; /* Couleur de fond */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown:hover .dropdown-options {
+    display: block; /* Afficher le dropdown au survol */
+}
+
+.dropdown-options a {
+    padding: 10px 20px; /* Espacement pour les éléments dropdown */
+    color: #000; /* Couleur du texte des options */
+}
+
+.dropdown-options a:hover {
+    background-color: rgba(213, 71, 71, 0.2); /* Changer la couleur de fond au survol avec transparence */
+}

@@ -9,7 +9,7 @@
   .frameHome {
     width: 95%;
     height: 95%;
-    background-color: #111;
+    background-color: #222222;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,27 +21,106 @@
   .pict_box{
     width: 35%;
     height: 95%;
-    background-color: #ddd;
+    background-color: #F5F5F5;
     border-radius: 15px;
   }
+
+
+  /* -------------------------------------------------------------------------------------------- */
   .center-content {
     display: flex;
     flex-direction: column;
     align-items: center; 
     margin-top: -20vh;
   }
-
   .center-picture {
+    
     width: 25vh;
     height: 25vh;
-    background-color: #ddd;
     border-radius: 50%;
     margin-bottom: 2vh;
+    display: flex; /* Active Flexbox */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    position: relative; /* Pour positionner le texte au centre */
   }
+  .image-center {
+    position: absolute; /* Position absolue pour superposer l'image */
+    width: 21vh; /* Ajuste la taille de l'image */
+    height: 21vh; /* Garde l'aspect de l'image */
+    z-index: 1; /* Assure-toi que l'image est au-dessus du texte */
+    border-radius: 50%;
+    object-fit: cover; /* L'image s'ajuste bien dans la boîte */
 
+  }
 .center-text {
     text-align: center;
-  color: white;
+  color: #F5F5F5;
   font-size: 15px;
   margin: 0;
 }
+.text {
+  letter-spacing: 1.05px;
+  text-transform: uppercase;
+  font-family: 'Kanit';
+  font-size: 2.5px;
+  fill: #111;
+  text-shadow: 2px 0px #F5F5F5;
+}
+#rotatingText {
+  animation-name: rotate-circle;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate-circle {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+.pict_box {
+  width: 35%;
+  height: 95%;
+  position: relative; /* Pour que le pseudo-élément soit positionné correctement */
+  border-radius: 15px;
+  overflow: hidden; /* Pour que le dégradé reste à l'intérieur des limites */
+}
+
+.image-class {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* L'image s'ajuste bien dans la boîte */
+  border-radius: 15px;
+  position: relative;
+  z-index: 1; /* S'assure que l'image est en dessous du dégradé */
+  
+}
+
+/* Ajout du dégradé */
+.gradient-effectfirst::before  {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(235,95,9), transparent 40%);
+  z-index: 2; /* Place le dégradé par-dessus l'image */
+  pointer-events: none; /* Pour que le dégradé n'interfère pas avec l'interaction utilisateur */
+}
+.gradient-effectsec::before  {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #8A4FFF, transparent 40%);
+  z-index: 2; /* Place le dégradé par-dessus l'image */
+  pointer-events: none; /* Pour que le dégradé n'interfère pas avec l'interaction utilisateur */
+}
+
