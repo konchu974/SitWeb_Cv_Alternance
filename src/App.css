@@ -1,7 +1,13 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bowlby+One+SC&family=Poppins&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bowlby+One+SC&family=Mukta+Vaani:wght@200;300;400;500;600;700;800&family=Poppins&family=Protest+Strike&display=swap');
 
+
+body {
+  font-family: 'Mukta Vaani';
+  color: #0c0c1a;
+
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9fd; /* Exemple de couleur de fond */
+}
 

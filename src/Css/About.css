@@ -1,42 +1,74 @@
 .hard-skills {
-    background-color: #8A4FFF;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #F5F5F5;
-    border-radius: 35px;
-    padding: 15px;
-    padding-bottom: 50px;
-    margin-left: 40%;
-    margin-right: 40%;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bold;
-    font-size: 1.2em;
-  }
-  
-  .arrow-left,
-  .arrow-right {
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid #222222;
-    border-left: 2px solid #222222;
-    transform: rotate(-45deg);
-  }
-  
-  .arrow-right {
-    transform: rotate(135deg);
-  }
-  
-  .content {
-    background-color: #8A4FFF;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: -45px;
-    height: 60vh;
-    border-radius: 35px;
+  background-color: #303b5f;
+  font-family: 'Protest Strike';
+font-size: 3vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 35px;
+  padding: 15px;
+  padding-bottom: 50px;
+  margin-left: 40%;
+  margin-right: 40%;
+  transition: background-color 0.5s ease; /* Ajoutez une transition ici */
 
-  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.arrow {
+    display: inline-block; /* Assurez-vous que l'élément est en ligne */
+    transition: transform 0.1s ease-in-out, opacity 0.5s ease-in-out; /* Ajout de l'opacité à la transition */
+    height: auto;
+    width: 5vh;    
+    opacity: 0.8; /* Opacité par défaut */
+}
+
+.arrow:hover {
+    transform: scale(1.7); /* Augmentez la taille à 120% au survol */
+    opacity: 1; /* Augmentez l'opacité à 100% au survol */
+}
+
+
+.content {
+  background-color: #303b5f;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: -45px;
+  height: 60vh;
+  border-radius: 35px;
+  padding: 2%;
+  display: grid; /* Utilise CSS Grid */
+  grid-template-columns: repeat(3, 1fr); /* Trois colonnes de taille égale */
+  gap: 10px; /* Espace entre les colonnes */
+  overflow-y: auto; /* Ajoute un défilement si le contenu déborde */
+  transition: background-color 0.5s ease; /* Ajoutez une transition ici */
+
+}
+
+.skill-item {
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  color: #0c0c1a; /* Changez la couleur selon votre design */
+  font-size: 3vh;
+  
+}
+
+.skill-item span {
+  margin-right: 5%; /* Espace entre le texte et l'icône */
+}
+
+.icon {
+  font-size: 2.5vh;
+  width: 2.5em; /* Taille relative */
+  height: auto; /* Taille relative */
+  display: inline-block;
+  fill: #0c0c1a;
+  
+}

@@ -5,7 +5,9 @@ function Navbar() {
   return (
     <nav>
       <div className="nav-wrapper">
-        <a href="#" className="brand-logo">Logo</a>
+      <a href="/" class="brand-logo">
+    <span class="color-p">P</span>ort<span class="color-f">F</span>olio
+</a>
         <ul id="nav-mobile" className="right hide-on-med-and-down">
           <li><a href="sass.html">A propos</a></li>
           <li><a href="badges.html">Projets</a></li>
@@ -13,7 +15,7 @@ function Navbar() {
             <div className="dropdown">
               <div className="dropdown-toggle">Centres d'Intérêt</div>
               <div className="dropdown-options">
-                <a href="#">Photo</a>
+                <a href="/gallery">Photo</a>
                 <a href="#">Modélisation 3D</a>
                 <a href="#">Je sais pas</a>
               </div>
