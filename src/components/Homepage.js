@@ -3,7 +3,8 @@ import "../Css/Homepage.css";
 import backgroundPOS from "../Assets/backgroundPOS.jpg";
 import brickbreaker from "../Assets/brickbreaker.png";
 import centerImage from "../Assets/profilpic.png";
-import About from "./About";
+import Skills from "./Skills";
+import Apropos from './Apropos';
 
 const diameter = 30; // en vh, que tu peux ajuster en fonction de la taille réelle
 const radius = diameter / 2; // Rayon du cercle
@@ -20,6 +21,13 @@ function Home() {
               alt="Background POS"
               className="image-class "
             />
+            <div className="overlay">
+              <h2>Titre du Projet</h2>
+              <p>Petite description du projet pour donner un aperçu rapide.</p>
+              <a href="/project-page" className="btn-overlay">
+                Voir le projet
+              </a>
+            </div>
           </div>
           <div className="center-content">
             <div className="center-picture">
@@ -50,15 +58,14 @@ function Home() {
               </svg>
               <img
                 src={centerImage}
-                alt="Image centrale"
+                alt="centrale"
                 className="image-center"
               />
             </div>
             <div className="center-text">
               <h1>Dugain Clarence</h1>
-              Actuellement étudiant en deuxième année de développement
-              informatique à CESI, je suis à la recherche d’une alternance pour
-              ma deuxième année d'études, d’une durée d'un à deux ans.
+              <p>étudiant en deuxième année de développement
+              informatique au CESI de brest.</p>
               <a
                 href="https://linkedin.com/in/clarence-dugain-046097208"
                 target="_blank"
@@ -108,10 +115,19 @@ function Home() {
               alt="Background POS"
               className="image-class"
             />
+            <div className="overlay">
+              <h2>Titre du Projet</h2>
+              <p>Petite description du projet pour donner un aperçu rapide.</p>
+              <a href="/project-page" className="btn-overlay">
+                Voir le projet
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <About />
+      <Apropos/>
+      <Skills />
+
     </>
   );
 }

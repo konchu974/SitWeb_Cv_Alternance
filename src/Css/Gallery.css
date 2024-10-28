@@ -1,0 +1,20 @@
+/* Styles pour la galerie d'album */
+.album-gallery {
+  display: grid; /* Utilise un layout en grille */
+  grid-template-columns: repeat(4, 1fr); /* 4 images par ligne */
+  gap: 0; /* Aucune espace entre les images */
+ 
+}
+
+.album-photos {
+  display: contents; /* Utilise le contenu sans conteneur supplémentaire */
+}
+
+.album-gallery img {
+  width: 100%; /* Remplit la largeur de chaque cellule */
+  height: 100%; /* Conserve la hauteur naturelle de chaque image */
+  object-fit: cover; /* Recouvre toute la largeur sans distorsion */
+  margin: 0; /* Supprime la marge */
+  padding: 0; /* Supprime le padding */
+  display: block; /* Supprime l'espace en bas des images */
+}

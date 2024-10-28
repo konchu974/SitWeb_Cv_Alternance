@@ -1,0 +1,60 @@
+.About {
+    padding: 20px;
+    text-align: center;
+}
+
+.containerAbout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the start of the flex container */
+    flex-direction: row; /* Align items in a row */
+    margin-top: 20px;
+    background-color: #303b5f;
+    border-radius: 40px;
+    padding: 20px;
+    width: 70%;
+}
+
+.imgAbout {
+    flex: 1; /* Makes the image take 1/2 of the available space */
+}
+
+.aboutImage {
+    width: auto; /* Responsive width */
+    height: 60vh;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.textAbout {
+    flex: 1; /* Makes the text take the other 1/2 of the available space */
+    text-align: left; /* Align text to the left */
+}
+
+.logoAbout {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Permet d'aligner les icônes horizontalement */
+    margin: 20px 0; /* Ajoute une marge autour de la liste */
+}
+
+.logoAbout li {
+    display: flex; /* Aligne le texte et l'icône en ligne */
+    align-items: center;
+    flex-direction: column; /* Permet d'aligner le texte sous l'icône */
+    margin: auto;
+}
+.logoAbout li svg {
+    width: 5vh; /* Définir la largeur du SVG */
+    height: auto; /* Définir la hauteur du SVG */
+    fill: currentColor; /* Permet au SVG de changer de couleur selon le texte */
+    margin-left: 3vh;
+}
+
+.logoAbout li p {
+    margin-left: 8px; /* Espace entre l'icône et le texte */
+    font-size: 1.2em; /* Ajustement optionnel de la taille de la police */
+}
+
+.textAbout p {
+    font-size: 1.2em; /* Optionnel, ajustement de la taille de police pour le texte */
+}

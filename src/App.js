@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Homepage from './components/Homepage';
 import Contact from './components/Contact';
-import Galery from './components/Galery'; // Assurez-vous que le composant Gallery est créé
+import Galery from './components/Galery'; 
+import Projet from './components/Projects';
 import './App.css';
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/gallery" element={<Galery />} /> {/* Route vers la galerie */}
+          <Route path="/gallery" element={<Galery />} />
+          <Route path="/projet" element={<Projet />} />
         </Routes>
         <Contact/>
       </div>
