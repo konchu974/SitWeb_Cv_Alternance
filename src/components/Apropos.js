@@ -32,6 +32,27 @@ const Apropos = () => {
                         </li>
                     </div>
                     <p>Je suis passionné par le développement d'applications et j'aime travailler en équipe pour créer des projets innovants. La créativité est au cœur de mon processus de développement, ce qui me permet de résoudre des problèmes de manière originale.</p>
+                
+                <div className='passion'>
+                    <h2>Mes Passions :</h2>
+                    <a
+                href="https://linkedin.com/in/clarence-dugain-046097208"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="btnres pass">
+                  Photo
+                </button>
+              </a><a
+                href="https://linkedin.com/in/clarence-dugain-046097208"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="btnres pass">
+                  Modélisation3D
+                </button>
+              </a>
+                </div>
                 </div>
             </div>
         </div>

@@ -2,61 +2,54 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../Css/Skills.css";
 
+const API_URL = "http://localhost:5000/api/skills"; // URL constant
+
 const Skills = () => {
   const [skills, setSkills] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
-  useEffect(() => {
-    const fetchSkills = async () => {
-      try {
-        const response = await axios.get("http://localhost:5000/api/skills");
-        console.log(response.data); // Vérification de la réponse
-        setSkills(response.data.skills);
-      } catch (err) {
-        console.error(err); // Affichage de l'erreur
-        setError("Error loading skills");
-      } finally {
-        setLoading(false);
-      }
-    };
+  const fetchSkills = async () => {
+    setLoading(true); // Start loading state
+    try {
+      const response = await axios.get(API_URL);
+      setSkills(response.data.skills);
+      setError(""); // Clear any previous error
+    } catch (err) {
+      console.error(err);
+      setError("Error loading skills");
+    } finally {
+      setLoading(false);
+    }
+  };
 
+  useEffect(() => {
     fetchSkills();
   }, []);
 
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>{error}</p>;
+  if (error) return (
+    <div>
+      <p>{error}</p>
+      <button onClick={fetchSkills}>Retry</button>
+    </div>
+  );
 
-  // Filtrez uniquement les hard skills
-  const currentSkills = skills.find((skill) => skill.id === "hardskills");
-
-  console.log(currentSkills); // Vérification des compétences actuelles
-
-  const categoriesToDisplay =
-    currentSkills && currentSkills.categories ? currentSkills.categories : [];
+  const currentSkills = skills.find(skill => skill.id === "hardskills");
+  const categoriesToDisplay = currentSkills?.categories || [];
 
   return (
     <>
-      <div
-        className="hard-skills"
-        style={{
-          backgroundColor: "#f3892c", // couleur fixe pour les hard skills
-        }}
-      >
+      <div className="hard-skills" style={{ backgroundColor: "#f3892c" }}>
         <h2>Hard Skills</h2>
       </div>
-      <div
-        className="content"
-        style={{
-          backgroundColor: "#f3892c", // couleur fixe pour les hard skills
-        }}
-      >
+      <div className="content">
         {categoriesToDisplay.length > 0 ? (
-          categoriesToDisplay.map((category) => (
-            <div key={category.category} className="category">
-              <h3>{category.category}</h3>
+          categoriesToDisplay.map(category => (
+            <div key={category.category} className="category-box">
+              <h2>{category.category}</h2>
               <div className="skills">
-                {category.skills.map((skill) => (
+                {category.skills.map(skill => (
                   <div key={skill.name} className="skill-item">
                     <span>{skill.name}</span>
                     {skill.icon && (
