@@ -4,7 +4,7 @@ import backgroundPOS from "../Assets/backgroundPOS.jpg";
 import brickbreaker from "../Assets/brickbreaker.png";
 import centerImage from "../Assets/profilpic.png";
 import Skills from "./Skills";
-import Apropos from './Apropos';
+import Apropos from "./Apropos";
 
 const diameter = 30; // en vh, que tu peux ajuster en fonction de la taille réelle
 const radius = diameter / 2; // Rayon du cercle
@@ -52,20 +52,20 @@ function Home() {
                     href="#circle" // Référence au chemin du cercle
                     className="text"
                   >
-                    -Developpeur concepteur d'application{" "}
+                    -oncepteur Developpeur d'Application{" "}
                   </textPath>
                 </text>
               </svg>
-              <img
-                src={centerImage}
-                alt="centrale"
-                className="image-center"
-              />
+              <img src={centerImage} alt="centrale" className="image-center" />
             </div>
             <div className="center-text">
               <h1>Dugain Clarence</h1>
-              <p>étudiant en deuxième année de développement
-              informatique au CESI de brest.</p>
+              <p>
+                Actuellement en formation de Concepteur Développeur
+                d’Applications à l’AFPA de Brest, je recherche un stage non
+                rémunéré de 10 semaines à partir de novembre 2025 pour mettre en
+                pratique mes compétences en développement web et logiciel.
+              </p>
               <a
                 href="https://linkedin.com/in/clarence-dugain-046097208"
                 target="_blank"
@@ -90,21 +90,23 @@ function Home() {
                   GitHub
                 </button>
               </a>
-              <a
-                href="https://www.discord.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://linktr.ee/dugain.c">
                 <button className="btnres">
                   <svg
+                    version="1.1"
+                    id="Layer_1"
                     xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 640 512"
-                    width="16"
-                    height="16"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 80 97.7"
+                    style={{ enableBackground: "new 0 0 80 97.7" }}
                   >
-                    <path d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z" />
+                    <path
+                      d="M0.2,33.1h24.2L7.1,16.7l9.5-9.6L33,23.8V0h14.2v23.8L63.6,7.1l9.5,9.6L55.8,33H80v13.5H55.7l17.3,16.7l-9.5,9.4L40,49.1
+	L16.5,72.7L7,63.2l17.3-16.7H0V33.1H0.2z M33.1,65.8h14.2v32H33.1V65.8z"
+                    ></path>
                   </svg>
-                  Discord
+                  Linktree
                 </button>
               </a>
             </div>
@@ -125,9 +127,8 @@ function Home() {
           </div>
         </div>
       </div>
-      <Apropos/>
+      <Apropos />
       <Skills />
-
     </>
   );
 }

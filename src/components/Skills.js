@@ -44,28 +44,31 @@ const Skills = () => {
         <h2>Hard Skills</h2>
       </div>
       <div className="content">
-        {categoriesToDisplay.length > 0 ? (
-          categoriesToDisplay.map(category => (
-            <div key={category.category} className="category-box">
-              <h2>{category.category}</h2>
-              <div className="skills">
-                {category.skills.map(skill => (
-                  <div key={skill.name} className="skill-item">
-                    <span>{skill.name}</span>
-                    {skill.icon && (
-                      <span
-                        className="icon"
-                        dangerouslySetInnerHTML={{ __html: skill.icon }}
-                      />
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))
-        ) : (
-          <p>Aucune compétence à afficher</p>
-        )}
+      {categoriesToDisplay.length > 0 ? (
+  categoriesToDisplay.map((category, index) => (
+    <div
+      key={category.category}
+      className={`category-box ${index === 0 ? "full-width" : ""}`}
+    >
+      <h2>{category.category}</h2>
+      <div className="skills">
+        {category.skills.map(skill => (
+          <div key={skill.name} className="skill-item">
+            <span>{skill.name}</span>
+            {skill.icon && (
+              <span
+                className="icon"
+                dangerouslySetInnerHTML={{ __html: skill.icon }}
+              />
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  ))
+) : (
+  <p>Aucune compétence à afficher</p>
+)}
       </div>
     </>
   );

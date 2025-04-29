@@ -98,7 +98,6 @@
   width: 25vh;
   height: 25vh;
   border-radius: 50%;
-  margin-bottom: 2vh;
   display: flex; /* Active Flexbox */
   justify-content: center; /* Centre horizontalement */
   align-items: center; /* Centre verticalement */
@@ -118,8 +117,15 @@
   color: #f9f9fd;
   font-size: 2vh;
   margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
   
 }
+
+.center-text h1 {
+  font-size: 40px;
+}
+
 .text {
   letter-spacing: 1.5px;
   text-transform: uppercase;

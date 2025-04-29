@@ -1,70 +1,107 @@
-/* Styles pour la galerie d'album */
+/* https://codepen.io/jh3y/pen/xxjxqOL */
+body {
+  transition: background-color 0.5s ease; /* Durée et type de transition */
+}
 .album-gallery {
-  display: grid; /* Utilise un layout en grille */
-  grid-template-columns: repeat(4, 1fr); /* 4 images par ligne */
-  gap: 0; /* Aucune espace entre les images */
- 
+  display: grid;
+  min-height: 100vh;
+padding-inline-start: 10%;
+margin-top: 6%;
+
 }
 
-.album-photos {
-  display: contents; /* Utilise le contenu sans conteneur supplémentaire */
+.album-gallery ul {
+  display: flex;
+
+  width: calc(80% - 2rem);
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.album-gallery li {
+  padding: 0;
 }
 
 .album-gallery img {
-  width: 100%; /* Remplit la largeur de chaque cellule */
-  height: 100%; /* Conserve la hauteur naturelle de chaque image */
-  object-fit: cover; /* Recouvre toute la largeur sans distorsion */
-  margin: 0; /* Supprime la marge */
-  padding: 0; /* Supprime le padding */
-  display: block; /* Supprime l'espace en bas des images */
+  width: 280%;
+  object-fit: cover;
+  transition: all 0.2s ease;
 }
 
-/* Modal Styles */
-.modal {
+.album-gallery ul:is(:hover, :focus-within) img {
+  opacity: calc(0.1 + (var(--active-lerp, 0) * 0.9));
+  filter: grayscale(calc(1 - var(--active-lerp, 0)));
+}
+
+:root {
+  --lerp-0: 1;  
+  --lerp-1: 0.9;
+  --lerp-2: 0.8;
+  --lerp-3: 0.7;
+  --lerp-4: 0.5;
+  --lerp-5: 0.3;
+  --lerp-6: 0.1;
+}
+
+.album-gallery a {
+  outline-offset: 4px;
+}
+
+.album-gallery li {
+  flex: calc(0.1 + (var(--active-lerp, 0) * 1));
+  transition: flex 0.2s ease;
+}
+
+li:is(:hover, :focus-within) {
+  --active-lerp: var(--lerp-0);
+  z-index: 7;
+}
+li:has( + li:is(:hover, :focus-within)),
+li:is(:hover, :focus-within) + li {
+  --active-lerp: var(--lerp-1);
+  z-index: 6;
+}
+li:has( + li + li:is(:hover, :focus-within)),
+li:is(:hover, :focus-within) + li + li {
+  --active-lerp: var(--lerp-2);
+  z-index: 5;
+}
+li:has( + li + li + li:is(:hover, :focus-within)),
+li:is(:hover, :focus-within) + li + li + li {
+  --active-lerp: var(--lerp-3);
+  z-index: 4;
+}
+li:has( + li + li + li + li:is(:hover, :focus-within)),
+li:is(:hover, :focus-within) + li + li + li + li {
+  --active-lerp: var(--lerp-4);
+  z-index: 3;
+}
+li:has( + li + li + li + li + li:is(:hover, :focus-within)),
+li:is(:hover, :focus-within) + li + li + li + li + li {
+  --active-lerp: var(--lerp-5);
+  z-index: 2;
+}
+li:has( + li + li + li + li + li + li:is(:hover, :focus-within)),
+li:is(:hover, :focus-within) + li + li + li + li + li + li {
+  --active-lerp: var(--lerp-6);
+  z-index: 1;
+}
+
+
+
+
+.videos {
   display: flex;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.8);
-  justify-content: center;
-  align-items: center;
-  opacity: 0; /* Initial opacity for fade-in effect */
-  transition: opacity 0.3s ease; /* Transition for opacity */
+  justify-content: center; /* Centrer les vidéos horizontalement */
+  margin-top: 20px; /* Espace entre la galerie d'images et les vidéos */
+  overflow: hidden; /* Pour masquer les vidéos débordantes */
+
+
 }
 
-.modal.enlarged {
-  opacity: 1; /* Make modal visible */
+video {
+  width: 600px; /* Gardez la largeur fixe pour les vidéos */
+  display: block; /* S'assurer que la vidéo est un bloc */
+  margin: auto; /* Centrer la vidéo */
 }
-
-.modal-content {
-  max-width: 80%;
-  max-height: 80%;
-  transition: transform 0.3s ease; /* Transition for transform */
-  transform: scale(0); /* Start from scale 0 */
-  will-change: transform; /* Hint to browser for better performance */
-}
-
-.modal.enlarged .modal-content {
-  transform: scale(1); /* Scale to full size when enlarged */
-  
-}
-
-.modal-content.scale-down {
-  transform: scale(0); /* Shrink to scale 0 when closing */
-}
-
-.close {
-  position: absolute;
-  top: 20px;
-  right: 35px;
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-  
-}
-

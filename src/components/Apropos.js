@@ -1,6 +1,6 @@
 import React from 'react';
-import '../Css/Apropos.css'; // Ensure your CSS file is imported
-import aboutImage from '../Assets/abouttest.jpg'; // Update with the correct image path
+import '../Css/Apropos.css'; 
+import aboutImage from '../Assets/abouttest.jpg'; 
 
 const Apropos = () => {
     return (
@@ -31,12 +31,13 @@ const Apropos = () => {
                             <p>Autonomie</p>
                         </li>
                     </div>
-                    <p>Je suis passionné par le développement d'applications et j'aime travailler en équipe pour créer des projets innovants. La créativité est au cœur de mon processus de développement, ce qui me permet de résoudre des problèmes de manière originale.</p>
+                    <p>Passionné par le développement informatique, j’apprécie particulièrement le travail en équipe et la création de projets innovants. Curieux et créatif,
+                         j’aborde chaque défi technique comme une opportunité d’apprendre et de proposer des solutions originales et efficaces.</p>
                 
                 <div className='passion'>
                     <h2>Mes Passions :</h2>
                     <a
-                href="https://linkedin.com/in/clarence-dugain-046097208"
+                href="/gallery"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -44,7 +45,7 @@ const Apropos = () => {
                   Photo
                 </button>
               </a><a
-                href="https://linkedin.com/in/clarence-dugain-046097208"
+                href="/gallery"
                 target="_blank"
                 rel="noopener noreferrer"
               >

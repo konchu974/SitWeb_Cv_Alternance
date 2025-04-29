@@ -1,7 +1,6 @@
 .hard-skills {
   text-align: center;
-  background-color: #303b5f;
-  font-family: 'Protest Strike';
+  font-family: "Protest Strike";
   font-size: 3vh;
   display: flex;
   flex-direction: column;
@@ -21,10 +20,12 @@
   border-radius: 35px;
   padding: 2%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  grid-template-columns: repeat(2, 1fr); /* Responsive grid */
   overflow-y: auto;
-  transition: background-color 0.5s ease;
-  gap: 7.5%;
+  gap: 24px;
+}
+.full-width {
+  grid-column: 1 / -1;
 }
 
 .category-box {
@@ -32,15 +33,25 @@
   border-radius: 20px; /* Rounded corners */
   padding: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  width: 45vh;
+}
+.skills {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(120px, 1fr)
+  ); /* Grille responsive */
+  gap: 8%; /* Espacement entre les items */
+  margin-top: 10px;
 }
 
 .skill-item {
-  padding: 1%;
+  background-color: #e9ecef;
+  padding: 8px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
-  color: #0c0c1a;
-  font-size: 3vh;
+  justify-content: space-between;
+  font-size: 2vh;
 }
 
 .skill-item span {
@@ -52,5 +63,4 @@
   width: 2.5em;
   height: auto;
   display: inline-block;
-  fill: #0c0c1a;
 }
