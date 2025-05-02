@@ -33,6 +33,8 @@
   border-radius: 20px; /* Rounded corners */
   padding: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center;
+
 }
 .skills {
   display: grid;
@@ -40,18 +42,22 @@
     auto-fill,
     minmax(120px, 1fr)
   ); /* Grille responsive */
-  gap: 8%; /* Espacement entre les items */
+  gap: 7%; /* Espacement entre les items */
   margin-top: 10px;
+  
 }
 
 .skill-item {
   background-color: #e9ecef;
   padding: 8px;
+  width: 120px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 2vh;
+  margin: 5px;
+  text-align: center;
 }
 
 .skill-item span {

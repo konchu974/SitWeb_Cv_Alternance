@@ -54,13 +54,13 @@ const Skills = () => {
       <div className="skills">
         {category.skills.map(skill => (
           <div key={skill.name} className="skill-item">
-            <span>{skill.name}</span>
             {skill.icon && (
               <span
                 className="icon"
                 dangerouslySetInnerHTML={{ __html: skill.icon }}
               />
             )}
+            <span>{skill.name}</span>
           </div>
         ))}
       </div>
