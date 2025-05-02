@@ -1,0 +1,24 @@
+.wca_container {
+  overflow-x: scroll;
+  white-space: nowrap;
+  scroll-behavior: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.wca_container::-webkit-scrollbar {
+  display: none;
+}
+.wca_slider {
+  display: flex;
+}
+.wca_slide {
+  flex: 0 0 auto;
+  width: 120px;
+  margin-right: 24px;
+  text-align: center;
+}
+.carousel-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}

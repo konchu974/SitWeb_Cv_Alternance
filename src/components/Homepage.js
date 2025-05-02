@@ -5,6 +5,7 @@ import brickbreaker from "../Assets/brickbreaker.png";
 import centerImage from "../Assets/profilpic.png";
 import Skills from "./Skills";
 import Apropos from "./Apropos";
+import ContactForm from "./ContactForm";
 
 const diameter = 30; // en vh, que tu peux ajuster en fonction de la taille réelle
 const radius = diameter / 2; // Rayon du cercle
@@ -24,7 +25,7 @@ function Home() {
             <div className="overlay">
               <h2>Titre du Projet</h2>
               <p>Petite description du projet pour donner un aperçu rapide.</p>
-              <a href="/project-page" className="btn-overlay">
+              <a href="/project" className="btn-overlay">
                 Voir le projet
               </a>
             </div>
@@ -129,6 +130,7 @@ function Home() {
       </div>
       <Apropos />
       <Skills />
+      <ContactForm/>
     </>
   );
 }
