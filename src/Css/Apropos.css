@@ -4,6 +4,13 @@
     margin: 0 auto; /* Centre horizontalement la div */
 
 }
+.About, h1{
+    font-family: var(--font-title);
+}.About, h2{
+    font-family: var(--font-subtitle);
+}.About,p{
+    font-family: var( --font-text);
+}
 
 .containerAbout {
     display: flex;
@@ -49,7 +56,7 @@
     align-items: center;
     flex-direction: column; /* Permet d'aligner le texte sous l'icône */
     margin: 1vh;
-    background-color: #f3892c;
+    background-color: var(--primary-color);
     padding: 2%;
     border-radius: 20px;
     width: 20vh;
@@ -57,9 +64,7 @@
 .logoAbout li svg {
     width: 5vh; /* Définir la largeur du SVG */
     height: auto; /* Définir la hauteur du SVG */
-    
-    
-    
+    color: var(--text-color);
 }
 
 .logoAbout li p {
@@ -79,5 +84,8 @@
 .pass{
     width: 30vh;
     padding: 2%;
-    font-size: larger;
+    font-size: x-large;
+    font-family: var(--font-title);
+    background-color: var(--primary-color);
+    color: black;
 }

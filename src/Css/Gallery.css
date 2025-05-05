@@ -94,9 +94,9 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
 .videos {
   display: flex;
   justify-content: center; /* Centrer les vidéos horizontalement */
-  margin-top: 20px; /* Espace entre la galerie d'images et les vidéos */
+  margin-top: 15px; /* Espace entre la galerie d'images et les vidéos */
   overflow: hidden; /* Pour masquer les vidéos débordantes */
-
+  margin-bottom: 200px;
 
 }
 

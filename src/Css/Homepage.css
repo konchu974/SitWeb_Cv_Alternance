@@ -9,7 +9,7 @@
 .frameHome {
   width: 95%;
   height: 95%;
-  background-color: #0c0c1a;
+  background-color: var(--secondary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,7 +43,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7); /* Couleur sombre semi-transparente */
-  color: #fff;
+  color: var( --light-text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,8 +74,8 @@
 
 .btn-overlay {
   padding: 10px 20px;
-  background-color: #fff;
-  color: #333;
+  background-color: var(--background-color);
+  color: var( --text-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -84,10 +84,11 @@
 }
 
 .btn-overlay:hover {
-  background-color: #ddd;
+  background-color: var(--background-color);
 }
 
 /* -------------------------------------------------------------------------------------------- */
+
 .center-content {
   display: flex;
   flex-direction: column;
@@ -114,25 +115,27 @@
 .center-text {
   text-align: center;
   width: 60vh;
-  color: #f9f9fd;
+  color: var( --light-text-color);
   font-size: 2vh;
   margin: 0;
   padding-left: 15px;
   padding-right: 15px;
-  
+  font-family: var(--font-text);
 }
 
 .center-text h1 {
   font-size: 40px;
+  font-family: var(--font-title);
 }
 
 .text {
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  font-family: 'Mukta Vaani';
+  font-family: var(--font-text);
   font-size: 2.5px;
   fill: #111;
-  text-shadow: 2px 0px #f9f9fd;
+  text-shadow: 2px 0px var( --light-text-color);
+  ;
 }
 #rotatingText {
   animation-name: rotate-circle;
@@ -156,15 +159,16 @@
 }
 
 .btnres {
-  background-color: #f9f9fd;
+  background-color: var(--light-text-color);
   border: 1px solid #d5d9d9;
   border-radius: 8px;
   box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
   box-sizing: border-box;
-  color: #0c0c1a;
+  color: var( --text-color);
+
   cursor: pointer;
   display: inline-block;
-  font-family: "Amazon Ember",sans-serif;
+  font-family: var(--font-subtitle);
   font-size: 13px;
   line-height: 29px;
   position: relative;
@@ -180,12 +184,10 @@
   padding: auto;
 }
 
-.btnres:hover {
-  background-color: #f7fafa;
-}
+
 
 .btnres:focus {
-  border-color: #f3882b;
+  border-color: var(--primary-color);
   box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
   outline: 0;
 }
@@ -218,7 +220,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(-10deg, #f3892c, transparent 60%);
+  background: linear-gradient(0deg, var(--primary-color), transparent 40%);
   z-index: 2; /* Place le dégradé par-dessus l'image */
   pointer-events: none; /* Pour que le dégradé n'interfère pas avec l'interaction utilisateur */
 }
@@ -229,7 +231,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, #303b5f, transparent 40%);
+  background: linear-gradient(0deg, var(--primary-color), transparent 40%);
   z-index: 2; /* Place le dégradé par-dessus l'image */
   pointer-events: none; /* Pour que le dégradé n'interfère pas avec l'interaction utilisateur */
 }

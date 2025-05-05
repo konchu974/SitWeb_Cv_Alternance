@@ -1,6 +1,5 @@
 .hard-skills {
   text-align: center;
-  font-family: "Protest Strike";
   font-size: 3vh;
   display: flex;
   flex-direction: column;
@@ -12,8 +11,12 @@
   transition: background-color 0.5s ease;
 }
 
+.hard-skills, h2{
+font-family: var(--font-title)
+}
+
 .content {
-  background-color: #f3892c;
+  background-color: var(--primary-color);
 
   margin-top: -45px;
   border-radius: 35px;
@@ -31,7 +34,7 @@
 }
 
 .category-box {
-  background-color: #f8f9fa; /* Light background for categories */
+  background-color: var(--light-text-color); /* Light background for categories */
   border-radius: 20px; /* Rounded corners */
   padding: 15px;  
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */

@@ -2,12 +2,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bowlby+One+SC&family=Mukta+Vaani:wght@200;300;400;500;600;700;800&family=Poppins&family=Protest+Strike&display=swap');
 
 
-body {
-  font-family: 'Mukta Vaani';
-  color: #0c0c1a;
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
+:root {
+  /* Couleurs */
+  --primary-color: #F3892C;     /* Principale (ex: liens, boutons) */
+  --secondary-color: #1F3A5B;   /* Secondaire (ex: accents) */
+  --complementary-color: #F1E6D6; /* Complémentaire (ex: icônes, détails) */
+  --background-color: #f1e6d6;
+  --text-color: #1f3a5b;
+  --light-text-color: #f7f7f7;
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Typographie */
+  --font-title: 'Montserrat', sans-serif;
+  --font-weight-title: 800;
+
+  --font-subtitle: 'Lora', serif;
+  --font-weight-subtitle: 400;
+
+  --font-text: 'Hind Madurai', sans-serif;
+  --font-weight-subtitle: 400;
+
+  /* Tailles de police */
+  --size-title: 2rem;
+  --size-subtitle: 1.5rem;
+  --size-text: 1rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-text);
     margin: 0;
     padding: 0;
-    background-color: #f9f9fd; /* Exemple de couleur de fond */
+    background-color: var(--background-color); /* Exemple de couleur de fond */
 }
 
