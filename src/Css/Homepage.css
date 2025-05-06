@@ -96,7 +96,7 @@
   margin-top: -1vh;
 }
 .center-picture {
-  width: 25vh;
+  width: 26vh;
   height: 25vh;
   border-radius: 50%;
   display: flex; /* Active Flexbox */
@@ -106,8 +106,8 @@
 }
 .image-center {
   position: absolute; /* Position absolue pour superposer l'image */
-  width: 21vh; /* Ajuste la taille de l'image */
-  height: 21vh; /* Garde l'aspect de l'image */
+  width: 22vh; /* Ajuste la taille de l'image */
+  height: 22vh; /* Garde l'aspect de l'image */
   z-index: 1; /* Assure-toi que l'image est au-dessus du texte */
   border-radius: 50%;
   object-fit: cover; 
@@ -220,9 +220,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, var(--primary-color), transparent 40%);
+  background: linear-gradient(0deg, var(--secondary-color), transparent 40%);
   z-index: 2; /* Place le dégradé par-dessus l'image */
   pointer-events: none; /* Pour que le dégradé n'interfère pas avec l'interaction utilisateur */
+  opacity: 100%;
+
 }
 .gradient-effectsec::before {
   content: "";
@@ -231,7 +233,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, var(--primary-color), transparent 40%);
+  background: linear-gradient(0deg, var(--secondary-color), transparent 40%);
   z-index: 2; /* Place le dégradé par-dessus l'image */
   pointer-events: none; /* Pour que le dégradé n'interfère pas avec l'interaction utilisateur */
+  opacity: 100%;
 }

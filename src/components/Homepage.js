@@ -55,7 +55,8 @@ function Home() {
         <div className="frameHome">
         <div className="pict_box gradient-effectfirst">
         <img
-          src={thirdProject?.image}  // Image du projet 3
+                  src={`http://localhost:5000/images/${thirdProject?.image}`}
+                  // Image du projet 3
           alt={thirdProject?.title}  // Titre du projet 3
           className="image-class"
         />
@@ -149,7 +150,8 @@ function Home() {
           </div>
           <div className="pict_box gradient-effectsec">
         <img
-          src={fourthProject?.image}  // Image du projet 4
+        src={`http://localhost:5000/images/${fourthProject?.image}`}
+        // Image du projet 4
           alt={fourthProject?.title}  // Titre du projet 4
           className="image-class"
         />
