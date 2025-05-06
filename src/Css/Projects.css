@@ -290,11 +290,6 @@
   vertical-align: middle;
 }
 
-.btnres_proj:focus {
-  border-color: var(--primary-color);
-  box-shadow: rgba(0, 0, 0, 0.5) 0 2px 5px 0;
-  outline: 0;
-}
 
 /* --------------- */
 .see-more-overlay {
@@ -304,7 +299,7 @@
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
-  display: flex;
+  display: flex; 
   justify-content: center;
   align-items: center;
   z-index: 1000;
