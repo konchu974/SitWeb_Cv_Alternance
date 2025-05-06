@@ -6,6 +6,8 @@ import Footer from './components/Footer';
 import Galery from './components/Galery';
 import Projet from './components/Projects';
 import ScrollToSection from './components/scrollToSection'; 
+import ScrollToTopButton from './components/Scrolltoup';  // Adjust path accordingly
+
 import './App.css';
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
           <Route path="/gallery" element={<Galery />} />
           <Route path="/project" element={<Projet />} />
         </Routes>
+        
         <Footer />
       </div>
     </Router>

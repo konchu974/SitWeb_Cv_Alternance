@@ -43,7 +43,7 @@ function ContactForm() {
     };
 
     return (
-        <>
+        
             <section className="get-in-touch">
                 <h1 className="title">Me contacter</h1>
                 <form className="contact-form row" onSubmit={handleSubmit}>
@@ -88,19 +88,7 @@ function ContactForm() {
                     </div>
                 </form>
             </section>
-
-            <p className="note">
-                Based on{" "}
-                <a
-                    className="link"
-                    href="http://redcollar.digital/contacts/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Red Collar Contact Form
-                </a>.
-            </p>
-        </>
+        
     );
 }
 

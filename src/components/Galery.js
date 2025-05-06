@@ -3,6 +3,7 @@ import axios from "axios";
 import "../Css/Gallery.css"; // Assurez-vous que votre CSS est correctement importé
 import video1 from "../Assets/sweet-ammo0001-0250.mp4";
 import essayevid2 from "../Assets/0001-0250.mp4";
+import ScrollToTopButton from './Scrolltoup';
 
 const AlbumGallery = () => {
   const [albums, setAlbums] = useState([]);
@@ -86,7 +87,9 @@ const AlbumGallery = () => {
           style={{ display: 'block' }} // S'assurer que la vidéo est visible
         />
       </div>
+      <ScrollToTopButton />
     </div>
+
   );
 };
 

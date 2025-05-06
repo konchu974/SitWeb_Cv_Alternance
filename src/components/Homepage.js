@@ -4,6 +4,8 @@ import centerImage from "../Assets/profilpic.png";
 import Skills from "./Skills";
 import Apropos from "./Apropos";
 import ContactForm from "./ContactForm";
+import ScrollToTopButton from './Scrolltoup';  // Adjust path accordingly
+
 
 const diameter = 30; // en vh, que tu peux ajuster en fonction de la taille réelle
 const radius = diameter / 2; // Rayon du cercle
@@ -168,6 +170,7 @@ function Home() {
       <Skills />
       <section id="contact">
         <ContactForm />
+        <ScrollToTopButton />
       </section>    </>
   );
 }

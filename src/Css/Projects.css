@@ -188,6 +188,7 @@
 
   
 .btnres_proj {
+	font-size: large;
 	background-color: var(--light-text-color);
 	border: 1px solid #d5d9d9;
 	border-radius: 8px;
@@ -197,18 +198,17 @@
 	cursor: pointer;
 	display: inline-block;
 	font-family: var(--font-title);
-	font-size: 13px;
 	line-height: 29px;
 	position: absolute; /* Ajouté pour le positionnement absolu */
 	bottom: 10px; /* Placer à 10px du bas */
-	right: 10px; /* Placer à 10px de la droite */
+	right: 20px; /* Placer à 10px de la droite */
 	text-align: center;
 	text-decoration: none;
 	user-select: none;
 	-webkit-user-select: none;
 	touch-action: manipulation;
 	vertical-align: middle;
-	width: 100px;
+	width: 150px;
 	margin: 0; /* Enlève les marges pour mieux contrôler la position */
 	padding: auto;
   }
@@ -216,7 +216,8 @@
   .btnres_proj svg {
 	width: 20px;
 	height: 20px;
-	margin-right: 5px;
+	margin-right: 20px;
+	vertical-align: middle;
   }
   
 
@@ -257,12 +258,14 @@
 
   .see-more-modal, h2{
 	text-align: center;
+	text-transform: var(--font-text);
+	font-size: xx-large;
   }
   
   .modal-close {
 	position: absolute;
 	top: 10px;
-	right: 10px;
+	right: 40px;
 	background-color: transparent;
 	border: none;
 	font-size: 50px;
@@ -272,5 +275,6 @@
   .see-more-video {
 	width: 80%;
 	height: auto;
+	border-radius: 5px;
   }
 

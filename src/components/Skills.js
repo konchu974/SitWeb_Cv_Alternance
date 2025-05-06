@@ -42,8 +42,8 @@ const Skills = () => {
 
   return (
     <>
-      <div className="hard-skills" style={{ backgroundColor: "#f3892c" }}>
-        <h2>Hard Skills</h2>
+      <div className="hard-skills" >
+        <h2 className="titleHard">Hard Skills</h2>
       </div>
       <div className="content">
         {categoriesToDisplay.length > 0 ? (

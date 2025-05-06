@@ -4,9 +4,14 @@
     margin: 0 auto; /* Centre horizontalement la div */
 
 }
-.About, h1{
+.titleApropos{
     font-family: var(--font-title);
-}.About, h2{
+    font-size: 35px;
+    
+    
+}
+.titleSoft{
+    font-size: 25px;
     font-family: var(--font-subtitle);
 }.About,p{
     font-family: var( --font-text);
@@ -85,7 +90,7 @@
     width: 30vh;
     padding: 2%;
     font-size: x-large;
-    font-family: var(--font-title);
+    font-family: var(--font-subtitle);
     background-color: var(--primary-color);
     color: black;
 }
