@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../Css/Skills.css";
+import "../Css/Responssive/ResSkills.css";
 import IconCarousel from "./IconCarousel"; // adapte le chemin selon ton arborescence
 
 const API_URL = "http://localhost:5000/api/skills";
@@ -49,7 +50,7 @@ const Skills = () => {
         {categoriesToDisplay.length > 0 ? (
           categoriesToDisplay.map(category => (
             <div key={category.category} className="category-box full-width">
-              <h2>{category.category}</h2>
+              <h2 className="catetitle">{category.category}</h2>
               <IconCarousel items={category.skills} />
             </div>
           ))

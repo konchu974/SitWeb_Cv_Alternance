@@ -1,0 +1,24 @@
+@media screen and (max-width: 768px) {
+    .hard-skills {
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: -90px;
+    }
+  
+    .content {
+      width: 90%;
+      grid-template-columns: 1fr; /* Une seule colonne sur les écrans de petite taille */
+    }
+  
+    .category-box {
+        margin-top: 10px;
+        width: 20%;
+        height: 90%;
+      padding: 5px; /* Réduire le padding */
+    }
+
+  .catetitle{
+    font-size: 25px;
+  }
+  }
+  

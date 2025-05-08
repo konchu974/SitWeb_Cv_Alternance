@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Css/Apropos.css'; 
+import "../Css/Responssive/ResApropos.css"
 import aboutImage from '../Assets/abouttest.jpg'; 
 
 const Apropos = () => {
@@ -41,7 +42,7 @@ const Apropos = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="btnres pass">
+                <button className="btnres-pass">
                   Mes Passions
                 </button>
               </a>

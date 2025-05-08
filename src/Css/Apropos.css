@@ -1,96 +1,101 @@
 .About {
-    padding: 20px;
-    text-align: center;
-    margin: 0 auto; /* Centre horizontalement la div */
-
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto; /* Centre horizontalement la div */
+  margin-bottom: 80px;
 }
-.titleApropos{
-    font-family: var(--font-title);
-    font-size: 35px;
-    
-    
+.titleApropos {
+  font-family: var(--font-title);
+  font-size: 35px;
 }
-.titleSoft{
-    font-size: 25px;
-    font-family: var(--font-subtitle);
-}.About,p{
-    font-family: var( --font-text);
+.titleSoft {
+  font-size: 25px;
+  font-family: var(--font-subtitle);
+}
+.About,
+p {
+  font-family: var(--font-text);
 }
 
 .containerAbout {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Align items at the start of the flex container */
-    flex-direction: row; /* Align items in a row */
-    margin-top: 5vh;
-    
-    border-radius: 40px;
-    padding: 3vh;
-    width: 70%;
-    margin: 0 auto; /* Centre horizontalement la div */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items at the start of the flex container */
+  flex-direction: row; /* Align items in a row */
+  margin-top: 5vh;
 
-    
+  border-radius: 40px;
+  padding: 3vh;
+  width: 70%;
+  margin: 0 auto; /* Centre horizontalement la div */
 }
 
 .imgAbout {
-    flex: 1; /* Makes the image take 1/2 of the available space */
+  flex: 1; /* Makes the image take 1/2 of the available space */
 }
 
 .aboutImage {
-    width: auto; /* Responsive width */
-    height: 80vh;
-    border-radius: 10px; /* Rounded corners */
+  width: auto; /* Responsive width */
+  height: 80vh;
+  border-radius: 10px; /* Rounded corners */
 }
 
 .textAbout {
-    flex: 1; /* Makes the text take the other 1/2 of the available space */
-    text-align: left; /* Align text to the left */
-  
+  flex: 1; /* Makes the text take the other 1/2 of the available space */
+  text-align: left; /* Align text to the left */
 }
 
 .logoAbout {
-    list-style-type: none;
-    padding: 0;
-    display: flex; /* Permet d'aligner les icônes horizontalement */
-    margin: 20px 0; /* Ajoute une marge autour de la liste */
-    
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Permet d'aligner les icônes horizontalement */
+  margin: 20px 0; /* Ajoute une marge autour de la liste */
 }
 
 .logoAbout li {
-    display: flex; /* Aligne le texte et l'icône en ligne */
-    align-items: center;
-    flex-direction: column; /* Permet d'aligner le texte sous l'icône */
-    margin: 1vh;
-    background-color: var(--primary-color);
-    padding: 2%;
-    border-radius: 20px;
-    width: 20vh;
+  display: flex; /* Aligne le texte et l'icône en ligne */
+  align-items: center;
+  flex-direction: column; /* Permet d'aligner le texte sous l'icône */
+  margin: 1vh;
+  background-color: var(--primary-color);
+  padding: 2%;
+  border-radius: 20px;
+  width: 20vh;
 }
 .logoAbout li svg {
-    width: 5vh; /* Définir la largeur du SVG */
-    height: auto; /* Définir la hauteur du SVG */
-    color: var(--text-color);
+  width: 5vh; /* Définir la largeur du SVG */
+  height: auto; /* Définir la hauteur du SVG */
+  color: var(--text-color);
 }
 
 .logoAbout li p {
-    margin-left: 8px; /* Espace entre l'icône et le texte */
-    font-size: 1.2em; /* Ajustement optionnel de la taille de la police */
+  margin-left: 8px; /* Espace entre l'icône et le texte */
+  font-size: 1.2em; /* Ajustement optionnel de la taille de la police */
 }
 
 .textAbout p {
-    margin-top: 15%;
-    font-size: 1.2em; /* Optionnel, ajustement de la taille de police pour le texte */
+  margin-top: 15%;
+  font-size: 1.2em; /* Optionnel, ajustement de la taille de police pour le texte */
 }
 
 .passion {
-    text-align: center;
+  text-align: center;
 }
 
-.pass{
-    width: 30vh;
-    padding: 2%;
-    font-size: x-large;
-    font-family: var(--font-subtitle);
-    background-color: var(--primary-color);
-    color: black;
+.btnres-pass {
+  height: 60px;
+  border-radius: 25%;
+  padding: 2%;
+  font-size: x-large;
+  font-family: var(--font-subtitle);
+  background-color: var(--primary-color);
+  color: black;
+
+  width: 100%; /* Faire en sorte que le bouton prenne toute la largeur disponible */
+  max-width: 30vh; /* Limiter la largeur maximale */
+
+
+  margin: 7vh;
+  border-radius: 20px;
+  width: 24vh;
 }

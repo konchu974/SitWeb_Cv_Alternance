@@ -1,0 +1,71 @@
+/* src/Css/Responssive/ResNavbar.css */
+
+/* 1) on cache le hamburger sur desktop */
+.hamburger {
+    display: none;
+  }
+  
+  /* 2) styles des lignes du hamburger */
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background: var(--text-color);
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* 3) quand on clique, on transforme en croix */
+  .hamburger.open .line:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .hamburger.open .line:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.open .line:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+  
+  /* 4) breakpoint mobile */
+  @media screen and (max-width: 768px) {
+
+    /* on cache le menu horizontal par défaut */
+    #nav-mobile {
+      display: none;
+    }
+  
+    /* on affiche le hamburger */
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      z-index: 2; /* au-dessus du menu éventuel */
+    
+
+    }
+
+    .brand-logo{
+        font-size: 2.5em;
+    }
+  
+    /* quand open, on affiche le menu vertical */
+    #nav-mobile.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;      /* juste sous la nav */
+      left: 0;
+      width: 100%;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1;
+    }
+  
+    /* espace et centrage des items */
+    #nav-mobile.open li {
+      margin: 10px 0;
+    }
+    #nav-mobile.open li a {
+      padding: 10px;
+    }
+  }
+  

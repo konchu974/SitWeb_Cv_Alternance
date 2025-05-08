@@ -1,0 +1,40 @@
+@media screen and (max-width: 768px) {
+    .titleApropos{
+        margin-top: 50px;
+    }
+    
+    .containerAbout {
+      flex-direction: column; /* Empile les éléments verticalement */
+      width: 90%; /* Réduire la largeur pour les écrans de petite taille */
+    }
+  
+    .imgAbout {
+      margin-bottom: 20px; /* Ajouter un espace entre l'image et le texte */
+    }
+  
+    .aboutImage {
+      height: auto; /* Réduire la hauteur de l'image pour les écrans de petite taille */
+      width: 100%; /* Faire en sorte que l'image prenne toute la largeur disponible */
+    }
+  
+    .textAbout {
+      text-align: center; /* Centrer le texte sur les écrans de petite taille */
+    }
+  
+    .logoAbout {
+      flex-direction: column; /* Empile les icônes verticalement */
+    }
+  
+    .logoAbout li {
+      margin: 10px 0; /* Réduire l'espace entre les icônes */
+      width: auto; /* Réduire la largeur des icônes */
+    }
+  
+    .passion{
+        margin-top: -40px;
+    }
+    .pass {
+     border-radius: 10%;
+    }
+  }
+  

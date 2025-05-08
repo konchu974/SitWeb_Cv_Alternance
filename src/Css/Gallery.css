@@ -21,6 +21,8 @@ margin-top: 6%;
 
 .album-gallery li {
   padding: 0;
+  flex: calc(0.1 + (var(--active-lerp, 0) * 1));
+  transition: flex 0.2s ease;
 }
 
 .album-gallery img {
@@ -48,10 +50,6 @@ margin-top: 6%;
   outline-offset: 4px;
 }
 
-.album-gallery li {
-  flex: calc(0.1 + (var(--active-lerp, 0) * 1));
-  transition: flex 0.2s ease;
-}
 
 li:is(:hover, :focus-within) {
   --active-lerp: var(--lerp-0);

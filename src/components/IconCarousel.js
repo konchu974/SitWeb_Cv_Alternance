@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "../Css/IconCarousel.css";
+import "../Css/Responssive/ResIconCar.css";
+
 
 const IconCarousel = ({ items }) => {
   const containerRef = useRef(null);
