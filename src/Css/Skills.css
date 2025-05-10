@@ -22,11 +22,11 @@
   border-radius: 35px;
   padding: 2%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Responsive grid */
+  grid-template-columns: repeat(2, 1fr); 
   overflow-y: auto;
   gap: 24px;
   width: 65%;
-  margin-left: auto; /* Centrer à gauche */
+  margin-left: auto;
   margin-right: auto;
 }
 .full-width {
@@ -34,10 +34,10 @@
 }
 
 .category-box {
-  background-color: var(--light-text-color); /* Light background for categories */
-  border-radius: 20px; /* Rounded corners */
+  background-color: var(--light-text-color); 
+  border-radius: 20px; 
   padding: 15px;  
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
   text-align: center;
   
 }

@@ -21,33 +21,33 @@
 .pict_box {
   width: 35%;
   height: 95%;
-  position: relative; /* Pour que le pseudo-élément soit positionné correctement */
+  position: relative;
   border-radius: 15px;
-  overflow: hidden; /* Pour que le dégradé reste à l'intérieur des limites */
+  overflow: hidden; 
   z-index: 0;
 }
 
 .image-class {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* L'image s'ajuste bien dans la boîte */
+  object-fit: cover; 
   border-radius: 15px;
   position: relative;
-  z-index: 1; /* S'assure que l'image est en dessous du dégradé */
+  z-index: 1; 
 }
 
 .pict_box:hover .image-class {
-  transform: scale(1.05); /* Zoom légèrement l'image */
+  transform: scale(1.05); 
 }
 
-/* Assurez-vous que l'overlay couvre bien toute la div pict_box */
+
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Couleur sombre semi-transparente */
+  background-color: rgba(0, 0, 0, 0.7); 
   color: var( --light-text-color);
   display: flex;
   flex-direction: column;
@@ -55,11 +55,11 @@
   justify-content: center;
   opacity: 0;
   transition: opacity 0.3s ease;
-  z-index: 1; /* Assurez-vous que l'overlay est au-dessus de l'image */
+  z-index: 1; 
 }
 
 .pict_box:hover .overlay {
-  opacity: 1; /* Affiche l'overlay au survol */
+  opacity: 1; 
 }
 
 .overlay h2, .overlay p {
@@ -104,16 +104,16 @@
   width: 26vh;
   height: 25vh;
   border-radius: 50%;
-  display: flex; /* Active Flexbox */
-  justify-content: center; /* Centre horizontalement */
-  align-items: center; /* Centre verticalement */
-  position: relative; /* Pour positionner le texte au centre */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  position: relative; 
 }
 .image-center {
-  position: absolute; /* Position absolue pour superposer l'image */
-  width: 22vh; /* Ajuste la taille de l'image */
-  height: 22vh; /* Garde l'aspect de l'image */
-  z-index: 1; /* Assure-toi que l'image est au-dessus du texte */
+  position: absolute; 
+  width: 22vh;
+  height: 22vh; 
+  z-index: 1; 
   border-radius: 50%;
   object-fit: cover; 
 }
@@ -157,10 +157,10 @@
 
 
 .btnres svg {
-  width: 3vh; /* Ajustez la largeur souhaitée */
-  height: auto; /* Ajustez la hauteur souhaitée */
-  vertical-align: middle; /* Aligne verticalement le SVG au milieu du texte */
-  margin-right: 10px; /* Ajoute un espace entre l'icône et le texte */
+  width: 3vh; 
+  height: auto; 
+  vertical-align: middle; 
+  margin-right: 10px; 
 }
 
 .btnres {
@@ -171,9 +171,9 @@
   box-sizing: border-box;
   color: var(--text-color);
   cursor: pointer;
-  display: inline-flex; /* Changement ici */
-  align-items: center;   /* Alignement vertical du texte et du svg */
-  justify-content: center; /* Pour centrer le tout */
+  display: inline-flex; 
+  align-items: center;   
+  justify-content: center; 
   font-family: var(--font-subtitle);
   font-size: 13px;
   line-height: 29px;
@@ -203,7 +203,7 @@
 
 
 
-/* Ajout du dégradé */
+
 .gradient-effectfirst::before {
   content: "";
   position: absolute;
@@ -212,8 +212,8 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(0deg, var(--secondary-color), transparent 40%);
-  z-index: 2; /* Place le dégradé par-dessus l'image */
-  pointer-events: none; /* Pour que le dégradé n'interfère pas avec l'interaction utilisateur */
+  z-index: 2;
+  pointer-events: none; 
   opacity: 100%;
 
 }
@@ -225,7 +225,7 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(0deg, var(--secondary-color), transparent 40%);
-  z-index: 2; /* Place le dégradé par-dessus l'image */
-  pointer-events: none; /* Pour que le dégradé n'interfère pas avec l'interaction utilisateur */
+  z-index: 2; 
+  pointer-events: none; 
   opacity: 100%;
 }

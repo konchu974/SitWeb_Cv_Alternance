@@ -1,11 +1,11 @@
 @media screen and (max-width: 768px) {
     .wca_slide {
-      min-width: 100px; /* Réduire la largeur minimale des éléments */
-      margin-right: 16px; /* Réduire l'espacement entre les éléments */
+      min-width: 100px; 
+      margin-right: 16px; 
     }
   
     .carousel-icon {
-      width: 40px; /* Réduire la taille des icônes */
+      width: 40px; 
       height: 40px;
     }
 

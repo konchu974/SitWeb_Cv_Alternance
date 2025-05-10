@@ -2,7 +2,6 @@
   margin: 50px 0;
 }
 
-/* Actual Code: */
 .projcard-container,
 .projcard-container * {
   box-sizing: border-box;
@@ -239,9 +238,9 @@
   display: inline-block;
   font-family: var(--font-title);
   line-height: 29px;
-  position: absolute; /* Ajouté pour le positionnement absolu */
-  bottom: 10px; /* Placer à 10px du bas */
-  right: 20px; /* Placer à 10px de la droite */
+  position: absolute; 
+  bottom: 10px; 
+  right: 20px; 
   text-align: center;
   text-decoration: none;
   user-select: none;
@@ -249,7 +248,7 @@
   touch-action: manipulation;
   vertical-align: middle;
   width: 150px;
-  margin: 0; /* Enlève les marges pour mieux contrôler la position */
+  margin: 0; 
   padding: auto;
 }
 
@@ -278,7 +277,7 @@
   touch-action: manipulation;
   vertical-align: middle;
   width: 150px;
-  margin: 0; /* Enlève les marges pour mieux contrôler la position */
+  margin: 0; 
   padding: auto;
 }
 
@@ -298,7 +297,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+  background: rgba(0, 0, 0, 0.6); 
   display: flex; 
   justify-content: center;
   align-items: center;

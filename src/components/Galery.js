@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "../Css/Gallery.css"; // Assurez-vous que votre CSS est correctement importé
+import "../Css/Gallery.css";
 import "../Css/Responssive/ResGallery.css";
 import video1 from "../Assets/sweet-ammo0001-0250.mp4";
 import essayevid2 from "../Assets/0001-0250.mp4";
@@ -35,17 +35,17 @@ const AlbumGallery = () => {
       const videoSectionTop = videoSection.getBoundingClientRect().top;
       const videoSectionBottom = videoSection.getBoundingClientRect().bottom;
 
-      // Si la section vidéo est dans la fenêtre
+      // changement de du background en fonction de la section
       if (videoSectionTop < window.innerHeight && videoSectionBottom >= 0) {
-        document.body.style.backgroundColor = "#0c0c1a"; // Changez ceci à la couleur souhaitée
+        document.body.style.backgroundColor = "#0c0c1a"; 
       } else {
-        document.body.style.backgroundColor = ""; // Réinitialiser à la couleur par défaut
+        document.body.style.backgroundColor = ""; 
       }
     };
 
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup de l'écouteur d'événement lors du démontage du composant
+  
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -54,7 +54,7 @@ const AlbumGallery = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>{error}</p>;
 
-  // Liste des vidéos
+
   const videos = [video1, essayevid2];
 
   const handleVideoEnd = () => {
@@ -82,12 +82,12 @@ const AlbumGallery = () => {
       </div>
       <div className="videos">
         <video
-          src={videos[currentVideoIndex]} // Afficher la vidéo actuelle
+          src={videos[currentVideoIndex]} 
           autoPlay
           muted
           width="600"
-          onEnded={handleVideoEnd} // Appeler handleVideoEnd lorsque la vidéo se termine
-          style={{ display: "block" }} // S'assurer que la vidéo est visible
+          onEnded={handleVideoEnd} 
+          style={{ display: "block" }}
         />
       </div>
       <ScrollToTopButton />

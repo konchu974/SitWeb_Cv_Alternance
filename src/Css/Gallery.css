@@ -1,6 +1,5 @@
-/* https://codepen.io/jh3y/pen/xxjxqOL */
 body {
-  transition: background-color 0.5s ease; /* Durée et type de transition */
+  transition: background-color 0.5s ease;
 }
 .album-gallery {
   display: grid;
@@ -91,15 +90,15 @@ li:is(:hover, :focus-within) + li + li + li + li + li + li {
 
 .videos {
   display: flex;
-  justify-content: center; /* Centrer les vidéos horizontalement */
-  margin-top: 15px; /* Espace entre la galerie d'images et les vidéos */
-  overflow: hidden; /* Pour masquer les vidéos débordantes */
+  justify-content: center; 
+  margin-top: 15px; 
+  overflow: hidden; 
   margin-bottom: 200px;
 
 }
 
 video {
-  width: 600px; /* Gardez la largeur fixe pour les vidéos */
-  display: block; /* S'assurer que la vidéo est un bloc */
-  margin: auto; /* Centrer la vidéo */
+  width: 600px; 
+  display: block; 
+  margin: auto; 
 }

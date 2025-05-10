@@ -4,30 +4,30 @@
     }
     
     .containerAbout {
-      flex-direction: column; /* Empile les éléments verticalement */
-      width: 90%; /* Réduire la largeur pour les écrans de petite taille */
+      flex-direction: column; 
+      width: 90%; 
     }
   
     .imgAbout {
-      margin-bottom: 20px; /* Ajouter un espace entre l'image et le texte */
+      margin-bottom: 20px; 
     }
   
     .aboutImage {
-      height: auto; /* Réduire la hauteur de l'image pour les écrans de petite taille */
-      width: 100%; /* Faire en sorte que l'image prenne toute la largeur disponible */
+      height: auto;
+      width: 100%;
     }
   
     .textAbout {
-      text-align: center; /* Centrer le texte sur les écrans de petite taille */
+      text-align: center;
     }
   
     .logoAbout {
-      flex-direction: column; /* Empile les icônes verticalement */
+      flex-direction: column;
     }
   
     .logoAbout li {
-      margin: 10px 0; /* Réduire l'espace entre les icônes */
-      width: auto; /* Réduire la largeur des icônes */
+      margin: 10px 0; 
+      width: auto; 
     }
   
     .passion{
@@ -40,11 +40,11 @@
 
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     .containerAbout {
-      width: 80%; /* Ajuster la largeur pour les tablettes */
+      width: 80%; 
     }
   
     .imgAbout {
-      margin-bottom: 30px; /* Ajuster l'espace entre l'image et le texte */
+      margin-bottom: 30px; 
     }
   
     .aboutImage {
@@ -52,16 +52,16 @@
     }
   
     .textAbout {
-      text-align: left; /* Conserver l'alignement du texte à gauche */
+      text-align: left; 
     }
   
     .logoAbout {
-      flex-direction: row; /* Conserver les icônes en ligne */
-      justify-content: space-around; /* Espacer les icônes */
+      flex-direction: row;
+      justify-content: space-around;
     }
   
     .logoAbout li {
-      margin: 0 20px; /* Ajuster l'espace entre les icônes */
+      margin: 0 20px; 
     }
 
     .passion{
@@ -72,8 +72,8 @@
    border-radius: 10%;
   }
   .btnres-pass {
-    font-size: 20px; /* Réduire la taille du texte */
-    padding: px 16px; /* Ajuster le rembourrage */
+    font-size: 20px; 
+    padding: px 16px;
   }
   }
   

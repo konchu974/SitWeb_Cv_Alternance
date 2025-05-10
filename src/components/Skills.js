@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../Css/Skills.css";
 import "../Css/Responssive/ResSkills.css";
-import IconCarousel from "./IconCarousel"; // adapte le chemin selon ton arborescence
+import IconCarousel from "./IconCarousel"; 
 
 const API_URL = "https://back-dugain.onrender.com/api/skills";
 

@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Galery from './components/Galery';
 import Projet from './components/Projects';
 import ScrollToSection from './components/scrollToSection'; 
-import ScrollToTopButton from './components/Scrolltoup';  // Adjust path accordingly
+import ScrollToTopButton from './components/Scrolltoup';  
 
 import './App.css';
 

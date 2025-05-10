@@ -1,49 +1,49 @@
 nav {
-  position: relative; /* Assure que la barre de navigation est au-dessus des autres éléments */
-  z-index: 1; /* Permet à la barre de navigation de rester au-dessus */
+  position: relative; 
+  z-index: 1; 
 }
 .brand-logo {
-  text-decoration: none; /* Enlève le soulignement du lien */
+  text-decoration: none; 
   font-family: "Protest Strike";
   font-size: 4.21rem;
   color: #0c0c1a;
 }
 
 .color-p {
-  color: var(--primary-color); /* Changez 'red' par la couleur désirée pour le P */
+  color: var(--primary-color); 
 }
 
 .color-f {
-  color: var(--secondary-color); /* Changez 'blue' par la couleur désirée pour le F */
+  color: var(--secondary-color); 
 }
 
 .nav-wrapper {
   display: flex;
-  justify-content: space-between; /* Espace entre le logo et la nav */
-  align-items: center; /* Aligne verticalement les éléments */
-  padding: 0 20px; /* Espacement latéral */
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0 20px;
   z-index: 1;
 }
 
 #nav-mobile {
-  display: flex; /* Utiliser flexbox pour la liste */
-  list-style-type: none; /* Supprimer les puces */
-  margin: 0; /* Supprimer les marges par défaut */
-  padding: 0; /* Supprimer le remplissage par défaut */
+  display: flex; 
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0; 
 }
 
 #nav-mobile li {
-  margin-left: 20px; /* Espacement entre les éléments */
+  margin-left: 20px; 
   font-family: var(--font-title);
 }
 
 #nav-mobile a {
-  display: block; /* Permet de donner une taille uniforme */
-  padding: 15px 20px; /* Taille uniforme pour tous les éléments */
-  text-decoration: none; /* Supprimer le soulignement */
+  display: block; 
+  padding: 15px 20px; 
+  text-decoration: none; 
   color: var(--text-color); 
-  text-align: center; /* Centrer le texte */
-  border-radius: 5px; /* Coins arrondis */
+  text-align: center; 
+  border-radius: 5px; 
 }
 
 #nav-mobile a:hover {

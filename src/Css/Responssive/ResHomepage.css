@@ -5,20 +5,20 @@
     margin-top: 60px;
     flex-direction: column;
     align-items: center; 
-    padding: 10px;/* Pour centrer les éléments enfants */
+    padding: 10px;
     height: 580px;
   }
   
   .pict_box {
     width: 100%;
     margin-bottom: 20px;
-    text-align: center; /* Pour centrer le contenu */
+    text-align: center; 
   }
   
   .center-content {
     width: 100%;
     margin-bottom: 20px;
-    text-align: center; /* Pour centrer le contenu */
+    text-align: center;
   }
   
   .center-picture {
@@ -42,7 +42,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: -5px; /* Pour centrer les boutons horizontalement */    
+    margin-top: -5px;     
   }
   
   .btnres {
@@ -54,28 +54,28 @@
     cursor: pointer;
     font-size: 0;
     margin: 10px 40px;
-    display: flex; /* Pour centrer le SVG */
-  justify-content: center; /* Pour centrer le SVG horizontalement */
-  align-items: center; /* Pour centrer le SVG verticalement */
+    display: flex; 
+  justify-content: center; 
+  align-items: center; 
     
   }
   
   .btnres svg {
-    width: 35px; /* Ajustez la taille du SVG */
-    height: 35px; /* Ajustez la taille du SVG */
+    width: 35px; 
+    height: 35px; 
     margin: auto;
   }
   
   
-  /* Vous pouvez également ajouter ceci pour centrer les boutons */
+ 
   .center-content a {
     display: block;
     text-align: center;
   }
 
   .center-text {
-    max-width: 90%; /* ou une autre valeur */
-    margin: 0 auto; /* pour centrer l'élément */
+    max-width: 90%;
+    margin: 0 auto;
     font-size: 15px;
   }
   

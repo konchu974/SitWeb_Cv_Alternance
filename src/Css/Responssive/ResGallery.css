@@ -6,10 +6,10 @@
   .album-gallery ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2px; /* Réduire l'espace entre les photos */
+    grid-gap: 2px; 
     padding: 0;
-    margin: 0 auto; /* Centrer la galerie */
-    width: fit-content; /* Ajuster la largeur de la galerie */
+    margin: 0 auto; 
+    width: fit-content; 
   }
   .album-gallery li {
     margin: 0;
@@ -20,11 +20,11 @@
     object-fit: cover;
   }
   .videos {
-    margin-top: 100px; /* Réduire l'espace entre la galerie et la vidéo */
+    margin-top: 100px; 
     margin-bottom: 100px;
   }
   .videos video {
-    width: 90%; /* Adapter la largeur de la vidéo à l'écran */
-    height: auto; /* Adapter la hauteur de la vidéo en fonction de la largeur */
+    width: 90%; 
+    height: auto; 
   }
 }

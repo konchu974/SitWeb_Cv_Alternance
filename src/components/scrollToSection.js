@@ -18,7 +18,7 @@ const ScrollToSection = () => {
       }
     };
 
-    // On delaye légèrement pour être sûr que le DOM est prêt
+   
     const timer = setTimeout(handleScroll, 300);
 
     return () => clearTimeout(timer);

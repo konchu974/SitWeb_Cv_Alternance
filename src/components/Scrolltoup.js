@@ -1,31 +1,26 @@
 import React, { useState, useEffect } from 'react';
 
 const ScrollToTopButton = () => {
-  // State to track whether the button should be shown
   const [visible, setVisible] = useState(false);
 
-  // Scroll event listener to show/hide the button
   const handleScroll = () => {
     if (window.scrollY > 200) {
-      setVisible(true); // Show button when scrolled more than 200px
+      setVisible(true); 
     } else {
-      setVisible(false); // Hide button when scrolled less than 200px
+      setVisible(false);
     }
   };
 
-  // Scroll to top of page when button is clicked
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth', // Smooth scrolling animation
+      behavior: 'smooth', 
     });
   };
 
-  // Add scroll event listener on mount
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
-    // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };

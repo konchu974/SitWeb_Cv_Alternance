@@ -88,7 +88,7 @@ function Projects() {
               </div>
             </div>
 
-            {/* Bouton "Voir plus" */}
+           
             <button
               className="btnres_voirplus"
               onClick={() => handleSeeMoreClick(project)}
@@ -99,7 +99,7 @@ function Projects() {
         ))}
       </div>
 
-      {/* Section "Voir plus" avec les détails du projet */}
+    
       {expandedProject && (
         <div className="see-more-overlay">
           <div className="see-more-modal">
@@ -107,10 +107,10 @@ function Projects() {
               X
             </button>
 
-            {/* Titre */}
+   
             <h2>{expandedProject.title}</h2>
 
-            {/* Carrousel d'images du projet */}
+        
             {expandedProject.images && expandedProject.images.length > 0 && (
               <Swiper
                 modules={[Pagination, Navigation]}
@@ -131,7 +131,7 @@ function Projects() {
               </Swiper>
             )}
 
-            {/* Bouton GitHub */}
+        
             <div className="modal-button-container">
               {expandedProject.githubUrl && (
                 <a

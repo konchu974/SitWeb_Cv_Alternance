@@ -1,11 +1,8 @@
-/* src/Css/Responssive/ResNavbar.css */
 
-/* 1) on cache le hamburger sur desktop */
 .hamburger {
     display: none;
   }
   
-  /* 2) styles des lignes du hamburger */
   .hamburger .line {
     width: 25px;
     height: 3px;
@@ -16,7 +13,7 @@
 
   }
   
-  /* 3) quand on clique, on transforme en croix */
+
   .hamburger.open .line:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
   }
@@ -27,10 +24,10 @@
     transform: translateY(-7px) rotate(-45deg);
   }
   
-  /* 4) breakpoint mobile */
+
   @media screen and (max-width: 768px) {
 
-    /* on cache le menu horizontal par défaut */
+
     #nav-mobile {
       display: none;
 

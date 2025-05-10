@@ -6,11 +6,11 @@ import centerImage from "../Assets/profilpic.png";
 import Skills from "./Skills";
 import Apropos from "./Apropos";
 import ContactForm from "./ContactForm";
-import ScrollToTopButton from "./Scrolltoup"; // Adjust path accordingly
+import ScrollToTopButton from "./Scrolltoup"; 
 
-const diameter = 30; // en vh, que tu peux ajuster en fonction de la taille réelle
-const radius = diameter / 2; // Rayon du cercle
-const center = radius; // Centre du cercle en x et y
+const diameter = 30; 
+const radius = diameter / 2; 
+const center = radius; 
 
 const API_URL = "https://back-dugain.onrender.com/api/projects";
 
@@ -23,7 +23,7 @@ function Home() {
     setLoading(true);
     try {
       const response = await axios.get(API_URL);
-      setProjects(response.data.projects); // Récupère tous les projets
+      setProjects(response.data.projects); 
       setError("");
     } catch (err) {
       console.error(err);
@@ -45,8 +45,7 @@ function Home() {
       </div>
     );
 
-  // Vérifie qu'il y a assez de projets
-  const thirdProject = projects[2]; // Projet 3 (index 2)
+  const thirdProject = projects[2]; 
   const fourthProject = projects[3];
 
   return (
@@ -56,8 +55,7 @@ function Home() {
           <div className="pict_box gradient-effectfirst">
             <img
               src={`https://back-dugain.onrender.com/images/${thirdProject?.image}`}
-              // Image du projet 3
-              alt={thirdProject?.title} // Titre du projet 3
+              alt={thirdProject?.title} 
               className="image-class"
             />
             <div className="overlay">
@@ -72,9 +70,9 @@ function Home() {
             <div className="center-picture">
               <svg
                 id="rotatingText"
-                viewBox={`0 0 ${diameter} ${diameter}`} // Ajuste le viewBox en fonction du diamètre
-                width={`${diameter}vh`} // Définit la largeur du SVG
-                height={`${diameter}vh`} // Définit la hauteur du SVG
+                viewBox={`0 0 ${diameter} ${diameter}`} 
+                width={`${diameter}vh`} 
+                height={`${diameter}vh`}
               >
                 <defs>
                   <path
@@ -82,13 +80,13 @@ function Home() {
                     d={`M ${center}, ${center} 
              m -${radius}, 0 
              a ${radius}, ${radius} 0 1, 0 ${diameter}, 0 
-             a ${radius}, ${radius} 0 1, 0 -${diameter}, 0`} // Chemin pour le cercle
+             a ${radius}, ${radius} 0 1, 0 -${diameter}, 0`}
                   />
                 </defs>
                 <text width="400">
                   <textPath
-                    alignmentBaseline="top" // Assure-toi que l'attribut est en camelCase
-                    href="#circle" // Référence au chemin du cercle
+                    alignmentBaseline="top"
+                    href="#circle" 
                     className="text"
                   >
                     -Concepteur Developpeur d'Application{" "}
@@ -161,8 +159,8 @@ function Home() {
           <div className="pict_box gradient-effectsec">
             <img
               src={`https://back-dugain.onrender.com/images/${fourthProject?.image}`}
-              // Image du projet 4
-              alt={fourthProject?.title} // Titre du projet 4
+           
+              alt={fourthProject?.title} 
               className="image-class"
             />
             <div className="overlay">

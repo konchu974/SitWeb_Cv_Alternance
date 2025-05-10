@@ -7,7 +7,7 @@ const IconCarousel = ({ items }) => {
   const containerRef = useRef(null);
   const animationRef = useRef(null);
 
-  const scrollSpeed = 0.5; // pixels per frame
+  const scrollSpeed = 0.5; 
 
   const startScroll = () => {
     const container = containerRef.current;
@@ -17,7 +17,7 @@ const IconCarousel = ({ items }) => {
 
       container.scrollLeft += scrollSpeed;
 
-      // Rewind scroll position to the start half way through
+      
       if (container.scrollLeft >= container.scrollWidth / 2) {
         container.scrollLeft = container.scrollLeft - container.scrollWidth / 2;
       }
