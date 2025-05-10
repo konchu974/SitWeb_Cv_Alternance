@@ -4,7 +4,7 @@ import "../Css/Skills.css";
 import "../Css/Responssive/ResSkills.css";
 import IconCarousel from "./IconCarousel"; // adapte le chemin selon ton arborescence
 
-const API_URL = "http://localhost:5000/api/skills";
+const API_URL = "https://back-dugain.onrender.com/api/skills";
 
 const Skills = () => {
   const [skills, setSkills] = useState([]);
@@ -38,17 +38,17 @@ const Skills = () => {
       </div>
     );
 
-  const currentSkills = skills.find(skill => skill.id === "hardskills");
+  const currentSkills = skills.find((skill) => skill.id === "hardskills");
   const categoriesToDisplay = currentSkills?.categories || [];
 
   return (
     <>
-      <div className="hard-skills" >
+      <div className="hard-skills">
         <h2 className="titleHard">Hard Skills</h2>
       </div>
       <div className="content">
         {categoriesToDisplay.length > 0 ? (
-          categoriesToDisplay.map(category => (
+          categoriesToDisplay.map((category) => (
             <div key={category.category} className="category-box full-width">
               <h2 className="catetitle">{category.category}</h2>
               <IconCarousel items={category.skills} />

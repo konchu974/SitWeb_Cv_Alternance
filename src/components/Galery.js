@@ -4,7 +4,7 @@ import "../Css/Gallery.css"; // Assurez-vous que votre CSS est correctement impo
 import "../Css/Responssive/ResGallery.css";
 import video1 from "../Assets/sweet-ammo0001-0250.mp4";
 import essayevid2 from "../Assets/0001-0250.mp4";
-import ScrollToTopButton from './Scrolltoup';
+import ScrollToTopButton from "./Scrolltoup";
 
 const AlbumGallery = () => {
   const [albums, setAlbums] = useState([]);
@@ -15,7 +15,9 @@ const AlbumGallery = () => {
   useEffect(() => {
     const fetchAlbums = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/albums");
+        const response = await axios.get(
+          "https://back-dugain.onrender.com/api/albums"
+        );
         setAlbums(response.data.albums);
       } catch (err) {
         setError("Error loading albums");
@@ -29,23 +31,23 @@ const AlbumGallery = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const videoSection = document.querySelector('.videos');
+      const videoSection = document.querySelector(".videos");
       const videoSectionTop = videoSection.getBoundingClientRect().top;
       const videoSectionBottom = videoSection.getBoundingClientRect().bottom;
 
       // Si la section vidéo est dans la fenêtre
       if (videoSectionTop < window.innerHeight && videoSectionBottom >= 0) {
-        document.body.style.backgroundColor = '#0c0c1a'; // Changez ceci à la couleur souhaitée
+        document.body.style.backgroundColor = "#0c0c1a"; // Changez ceci à la couleur souhaitée
       } else {
-        document.body.style.backgroundColor = ''; // Réinitialiser à la couleur par défaut
+        document.body.style.backgroundColor = ""; // Réinitialiser à la couleur par défaut
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    
+    window.addEventListener("scroll", handleScroll);
+
     // Cleanup de l'écouteur d'événement lors du démontage du composant
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -69,7 +71,7 @@ const AlbumGallery = () => {
               <li key={photo} className="result">
                 <a href="#">
                   <img
-                    src={`http://localhost:5000/images/${photo}`}
+                    src={`https://back-dugain.onrender.com/images/${photo}`}
                     alt={photo}
                   />
                 </a>
@@ -85,12 +87,11 @@ const AlbumGallery = () => {
           muted
           width="600"
           onEnded={handleVideoEnd} // Appeler handleVideoEnd lorsque la vidéo se termine
-          style={{ display: 'block' }} // S'assurer que la vidéo est visible
+          style={{ display: "block" }} // S'assurer que la vidéo est visible
         />
       </div>
       <ScrollToTopButton />
     </div>
-
   );
 };
 

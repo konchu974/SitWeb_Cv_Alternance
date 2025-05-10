@@ -12,7 +12,7 @@ const diameter = 30; // en vh, que tu peux ajuster en fonction de la taille rée
 const radius = diameter / 2; // Rayon du cercle
 const center = radius; // Centre du cercle en x et y
 
-const API_URL = "http://localhost:5000/api/projects";
+const API_URL = "https://back-dugain.onrender.com/api/projects";
 
 function Home() {
   const [projects, setProjects] = useState([]);
@@ -55,7 +55,7 @@ function Home() {
         <div className="frameHome">
           <div className="pict_box gradient-effectfirst">
             <img
-              src={`http://localhost:5000/images/${thirdProject?.image}`}
+              src={`https://back-dugain.onrender.com/images/${thirdProject?.image}`}
               // Image du projet 3
               alt={thirdProject?.title} // Titre du projet 3
               className="image-class"
@@ -160,7 +160,7 @@ function Home() {
           </div>
           <div className="pict_box gradient-effectsec">
             <img
-              src={`http://localhost:5000/images/${fourthProject?.image}`}
+              src={`https://back-dugain.onrender.com/images/${fourthProject?.image}`}
               // Image du projet 4
               alt={fourthProject?.title} // Titre du projet 4
               className="image-class"
