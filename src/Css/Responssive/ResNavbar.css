@@ -12,6 +12,8 @@
     background: var(--text-color);
     margin: 4px 0;
     transition: all 0.3s ease;
+    z-index: 10000;
+
   }
   
   /* 3) quand on clique, on transforme en croix */
@@ -31,6 +33,7 @@
     /* on cache le menu horizontal par défaut */
     #nav-mobile {
       display: none;
+
     }
   
     /* on affiche le hamburger */
@@ -46,6 +49,7 @@
     .brand-logo{
         font-size: 2.5em;
     }
+
   
     /* quand open, on affiche le menu vertical */
     #nav-mobile.open {
@@ -57,15 +61,19 @@
       width: 100%;
       background: #fff;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      z-index: 1;
+      z-index: 10000;
     }
   
     /* espace et centrage des items */
     #nav-mobile.open li {
       margin: 10px 0;
+      z-index: 10000;
+
     }
     #nav-mobile.open li a {
       padding: 10px;
+      z-index: 10000;
+
     }
   }
   

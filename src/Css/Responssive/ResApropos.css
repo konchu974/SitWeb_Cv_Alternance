@@ -37,4 +37,43 @@
      border-radius: 10%;
     }
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .containerAbout {
+      width: 80%; /* Ajuster la largeur pour les tablettes */
+    }
+  
+    .imgAbout {
+      margin-bottom: 30px; /* Ajuster l'espace entre l'image et le texte */
+    }
+  
+    .aboutImage {
+      margin-right: 20px;
+    }
+  
+    .textAbout {
+      text-align: left; /* Conserver l'alignement du texte à gauche */
+    }
+  
+    .logoAbout {
+      flex-direction: row; /* Conserver les icônes en ligne */
+      justify-content: space-around; /* Espacer les icônes */
+    }
+  
+    .logoAbout li {
+      margin: 0 20px; /* Ajuster l'espace entre les icônes */
+    }
+
+    .passion{
+      margin-top: -40px;
+    }
+    .pass {
+      font-size: 5px;
+   border-radius: 10%;
+  }
+  .btnres-pass {
+    font-size: 20px; /* Réduire la taille du texte */
+    padding: px 16px; /* Ajuster le rembourrage */
+  }
+  }
   

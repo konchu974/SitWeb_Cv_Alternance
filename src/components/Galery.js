@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../Css/Gallery.css"; // Assurez-vous que votre CSS est correctement importé
+import "../Css/Responssive/ResGallery.css";
 import video1 from "../Assets/sweet-ammo0001-0250.mp4";
 import essayevid2 from "../Assets/0001-0250.mp4";
 import ScrollToTopButton from './Scrolltoup';

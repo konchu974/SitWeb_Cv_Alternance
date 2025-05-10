@@ -1,0 +1,201 @@
+@media screen and (max-width: 768px) {
+    .projcard-container {
+      width: 100%;
+      margin: 0;
+      padding: 20px;
+    }
+    .projcard {
+        height: 450px;        
+        margin-bottom: 20px;
+    }
+    .projcard-img {
+      position: relative;
+      width: 100%;
+      height: 180px;
+      margin-bottom: 20px;
+    }
+    .projcard-textbox {
+      position: relative;
+      width: 100%;
+      left: 0;
+      padding: 0 20px;
+      margin-top: -30px;
+    }
+
+    .projcard-title{
+        font-size: 20px;
+    }
+    .projcard-subtitle{
+        font-size: 15px;
+    }
+    .projcard-textbox::before,
+    .projcard-textbox::after {
+      display: none;
+    }
+    .projcard:nth-child(2n) .projcard-textbox {
+      right: 0;
+    }
+    .projcard-description {
+      height: auto;
+      overflow: visible;
+      font-size: 0px;
+    }
+    .projcard-tagbox {
+        position: relative; /* Au lieu de bottom: -50px; */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 10px;
+    }
+    .projcard-tag {
+        display: inline-block;
+        margin: 0; /* Supprime les marges par défaut */
+      }
+    .btnres_voirplus {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin: 20px auto;
+        margin-top: 400px;
+        display: block;
+      }
+
+
+      /*------------------------------ */
+
+      .see-more-modal {
+        width: auto; /* Ajuste la largeur en fonction du contenu */
+        height: auto; /* Ajuste la hauteur en fonction du contenu */
+        max-width: 85%; /* Limite la largeur maximale */
+        max-height: 80%; /* Limite la hauteur maximale */
+        padding: 20px; /* Conserve le padding */
+      }
+      .see-more-images {
+        width: 75%;
+        height: auto; /* Ajuste la largeur de l'élément conteneur */
+      }
+      .see-more-images img {
+        max-width: 80%; /* Limite la largeur de l'image à la largeur de la modale */
+        max-height: 70vh; /* Limite la hauteur de l'image */
+        object-fit: contain; /* Ajuste l'ajustement de l'image */
+      }
+      
+      .modal-close {
+        font-size: 30px; /* Réduit la taille du bouton de fermeture pour les petits écrans */
+      }
+      
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .projcard-container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+  
+    .projcard {
+      height: 400px;
+      margin-bottom: 20px;
+    }
+  
+    .projcard-img {
+      position: relative;
+      width: 100%;
+      height: 190px;
+      margin-bottom: 20px;
+    }
+  
+    .projcard-textbox {
+      position: relative;
+      width: 100%;
+      left: 0;
+      padding: 0 20px;
+      margin-top: -35px;
+    }
+  
+    .projcard-title {
+      font-size: 22px;
+    }
+  
+    .projcard-subtitle {
+      font-size: 16px;
+    }
+  
+    .projcard-textbox::before,
+    .projcard-textbox::after {
+      display: none;
+    }
+  
+    .projcard:nth-child(2n) .projcard-textbox {
+      right: 0;
+    }
+  
+    .projcard-description {
+      height: auto;
+      overflow: visible;
+      font-size: 14px;
+    }
+  
+    .projcard-tagbox {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    .projcard-tag {
+      display: inline-block;
+      margin: 0;
+    }
+  
+    .btnres_voirplus {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      display: block;
+    }
+  
+    /*------------------------------ */
+  
+    .see-more-modal {
+      width: auto;
+      height: auto;
+      max-width: 80%;
+      max-height: 85%;
+      padding: 20px;
+    }
+    .image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .see-more-images {
+      width: 60%;
+      height: auto;
+      max-height: 80vh;
+    }
+    
+    .see-more-images img {
+      max-width: 100%;
+      max-height: 80vh;
+      object-fit: contain;
+    }
+    
+    .btnres_proj {
+      margin-top: 10px; /* espace entre l'image et les boutons */
+    }
+    
+    
+    
+  
+    .modal-close {
+      font-size: 35px;
+    }
+
+    
+  }
+  
+  

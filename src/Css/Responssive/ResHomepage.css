@@ -35,6 +35,8 @@
   .image-center {
     width: 125px;
     height: 125px;
+    z-index: 0;
+
   }
   .btnres-container {
     display: flex;
