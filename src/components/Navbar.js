@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Importez le composant Link
 import "../Css/Navbar.css";
 import "../Css/Responssive/ResNavbar.css";
 
@@ -9,10 +10,10 @@ function Navbar() {
   return (
     <nav>
       <div className="nav-wrapper">
-        <a href="/" className="brand-logo">
+        <Link to="/" className="brand-logo">
           <span className="color-p">P</span>ort
           <span className="color-f">F</span>olio
-        </a>
+        </Link>
 
         {/* bouton hamburger */}
         <div
@@ -29,10 +30,10 @@ function Navbar() {
           id="nav-mobile"
           className={isOpen ? "open" : ""}
         >
-          <li><a href="/#apropos">A propos</a></li>
-          <li><a href="/project">Projets</a></li>
-          <li><a href="/gallery">Centres d'Intérêt</a></li>
-          <li><a href="/#contact">Contact</a></li>
+          <li><Link to="/#apropos">A propos</Link></li>
+          <li><Link to="/project">Projets</Link></li>
+          <li><Link to="/gallery">Centres d'Intérêt</Link></li>
+          <li><Link to="/#contact">Contact</Link></li>
         </ul>
       </div>
     </nav>
